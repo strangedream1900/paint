@@ -18,6 +18,7 @@
   "homepage": "https://github.com/strangedream1900/paint#readme",
   "dependencies": {
     "jake": "^8.0.12",
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "nodeunit": "^0.9.1"
   }
 }

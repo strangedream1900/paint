@@ -3,7 +3,7 @@
 (function () {
 
     desc("Build and test");
-    task("default", ["lint"]);
+    task("default", ["lint", "test"]);
 
     desc("Lint everything");
     task("lint", [], function () {
@@ -19,6 +19,10 @@
         }
     });
 
+    desc("Test everything");
+    task("test", [], function () {
+        console.log("test goes here");
+    });
     desc("Integrate");
     task("integrate", ["default"], function () {
         console.log("1. Make sure 'git status' is clean.");
