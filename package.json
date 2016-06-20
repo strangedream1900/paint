@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/strangedream1900/paint/issues"
   },
-  "homepage": "https://github.com/strangedream1900/paint#readme"
+  "homepage": "https://github.com/strangedream1900/paint#readme",
+  "dependencies": {
+    "jake": "^8.0.12"
+  }
 }
