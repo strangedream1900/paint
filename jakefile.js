@@ -12,7 +12,6 @@
         var files = new jake.FileList();
         files.include("**/*.js");
         files.exclude("node_modules");
-        files.exclude("build");
         var passed = lint.validateFileList(files.toArray(), nodeLintOptions(), {});
         if (!passed) {
             fail("Lint failed");
@@ -22,7 +21,7 @@
     desc("Test everything");
     task("test", [], function () {
         var reporter = require("nodeunit").reporters["default"];
-        reporter.run(['test']);
+        reporter.run(['src/server/_server_test.js']);
     });
     desc("Integrate");
     task("integrate", ["default"], function () {
