@@ -1,6 +1,8 @@
 /* global desc, task, jake, fail, complete */
+"use strict";
 (function () {
-    "use strict";
+
+    desc("Build and test");
     task("default", ["lint"]);
 
     desc("Lint everything");
@@ -12,6 +14,19 @@
         files.exclude("node_modules");
         files.exclude("build");
         lint.validateFileList(files.toArray(), nodeLintOptions(), {});
+    });
+
+    desc("Integrate");
+    task("integrate", ["default"], function(){
+        console.log("1. Make sure 'git status' is clean.");
+        console.log("2. Build on the intergation box.");
+        console.log("   a. Walk over to the integration box.");
+        console.log("   b. 'git pull'");
+        console.log("   c. 'jake'");
+        console.log("3. 'git checkout integration'");
+        console.log("4. 'git merge master --no-ff --log'");
+        console.log("5. 'git checkout master'");
+        console.log("Integration logic here");
     });
 
     function nodeLintOptions() {
@@ -33,4 +48,4 @@
             node: true
         };
     }
-}());
+} ());
