@@ -1,6 +1,19 @@
 "use strict";
-console.log("Hello, I'm a server");
 
-exports.number = function() {
-    return 3;
+var http = require("http");
+var server;
+
+exports.start = function () {
+    server = http.createServer();
+
+    server.on("request", function (request, response) {
+        console.log("Received request");
+        response.end();
+    });
+
+    server.listen(8089);
+};
+
+exports.stop = function(callback) {
+    server.close(callback);
 };
