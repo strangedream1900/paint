@@ -10,6 +10,7 @@ exports.test_serverReturnsHelloWorld = function (test) {
     request.on("response", function (response) {
         var receivedData = false;
         response.setEncoding("utf8");
+
         test.equals(200, response.statusCode, "status code");
         response.on("data", function (chunk) {
             receivedData = true;
@@ -25,6 +26,10 @@ exports.test_serverReturnsHelloWorld = function (test) {
     });
 };
 
+exports.test_serverServesAFile = function (test) {
+    test.done();
+};
+
 exports.test_serverRunsCallbackWhenStopCompleted = function (test) {
     server.start(8089);
     server.stop(function () {
@@ -33,7 +38,7 @@ exports.test_serverRunsCallbackWhenStopCompleted = function (test) {
 };
 
 exports.test_serverRequiresPortNumber = function (test) {
-    test.throws(function() {
+    test.throws(function () {
         server.start();
     });
 
