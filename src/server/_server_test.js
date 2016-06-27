@@ -29,7 +29,7 @@ exports.test_serverReturnsHelloWorld = function (test) {
 
 exports.test_serverServesAFile = function (test) {
     var testDir = "generated/test";
-    var testFile = testDir + "test.html";
+    var testFile = testDir + "/test.html";
     fs.writeFileSync(testFile, "Hello World");
 
 
