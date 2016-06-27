@@ -1,15 +1,11 @@
 "use strict";
+
+
 var server = require("./server.js");
 var http = require("http");
 
-exports.tearDown = function (done) {
-    server.stop(function () {
-        done();
-    });
-};
-
-exports.test_serverReturnHelloWorld = function (test) {
-    server.start();
+exports.test_serverReturnsHelloWorld = function (test) {
+    server.start(8089);
     var request = http.get("http://192.168.129.140:8089");
     request.on("response", function (response) {
         var receivedData = false;
@@ -21,10 +17,43 @@ exports.test_serverReturnHelloWorld = function (test) {
         });
         response.on("end", function () {
             test.ok(receivedData, "should have received response data");
-            test.done();
+            server.stop(function () {
+                test.done();
+            });
         });
 
+    });
+};
 
+exports.test_serverRunsCallbackWhenStopCompleted = function (test) {
+    server.start(8089);
+    server.stop(function () {
+        test.done();
+    });
+};
 
+exports.test_serverRequiresPortNumber = function (test) {
+    test.throws(function() {
+        server.start();
+    });
+
+    test.done();
+};
+
+/*
+exports.test_stopCalledWhenServerIsntRunningThrowsException = function (test) {
+    test.throws(function () {
+        server.stop();
+
+    });
+    test.done();
+};
+
+*/
+
+exports.test_stopErrorsWhenNotRunning = function (test) {
+    server.stop(function (err) {
+        test.notEqual(err, undefined);
+        test.done();
     });
 };

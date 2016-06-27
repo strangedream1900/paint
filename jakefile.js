@@ -1,64 +1,101 @@
-/* global desc, task, jake, fail, complete */
+
 "use strict";
-(function () {
+/*global desc, task, jake, fail, complete */
+(function() {
 
-    desc("Build and test");
-    task("default", ["lint", "test"]);
+	var NODE_VERSION = "v4.4.5";
 
-    desc("Lint everything");
-    task("lint", [], function () {
-        var lint = require('./build/lint/lint_runner.js');
+	desc("Build and test");
+	task("default", ["lint", "test"]);
 
-        var files = new jake.FileList();
-        files.include("**/*.js");
-        files.exclude("node_modules");
-        var options = nodeLintOptions();
-        var passed = lint.validateFileList(files.toArray(), options, {});
-        if (!passed) {
-            fail("Lint failed");
-        }
-    });
+	desc("Lint everything");
+	task("lint", ["nodeVersion"], function() {
+		var lint = require("./build/lint/lint_runner.js");
 
-    desc("Test everything");
-    task("test", [], function () {
-        var reporter = require("nodeunit").reporters["default"];
-        reporter.run(['src/server/_server_test.js'], null, function(failures) {
-            if(failures) { fail("Tests failed"); }
-            complete();
-        });
-    }, {async: true});
+		var files = new jake.FileList();
+		files.include("**/*.js");
+		files.exclude("node_modules");
+		var options = nodeLintOptions();
+		var passed = lint.validateFileList(files.toArray(), options, {});
+		if (!passed) { fail("Lint failed"); }
+	});
 
-    desc("Integrate");
-    task("integrate", ["default"], function () {
-        console.log("1. Make sure 'git status' is clean.");
-        console.log("2. Build on the intergation box.");
-        console.log("   a. Walk over to the integration box.");
-        console.log("   b. 'git pull'");
-        console.log("   c. 'jake'");
-        console.log("   d. if jake fails, stop! try again");
-        console.log("3. 'git checkout integration'");
-        console.log("4. 'git merge master --no-ff --log'");
-        console.log("5. 'git checkout master'");
-        console.log("Integration logic here");
-    });
+	desc("Test everything");
+	task("test", ["nodeVersion"], function() {
+		var reporter = require("nodeunit").reporters["default"];
+		reporter.run(['src/server/_server_test.js'], null, function(failures) {
+			if (failures) {fail("Tests failed");}
+			complete();
+		});
+	}, {async: true});
 
-    function nodeLintOptions() {
-        return {
-            bitwise: true,
-            curly: false,
-            eqeqeq: true,
-            forin: true,
-            immed: true,
-            latedef: false,
-            newcap: true,
-            noarg: true,
-            noempty: true,
-            nonew: true,
-            regexp: true,
-            undef: true,
-            strict: true,
-            trailing: true,
-            node: true
-        };
-    }
-} ());
+	desc("Integrate");
+	task("integrate", ["default"], function() {
+		console.log("1. Make sure 'git status' is clean.");
+		console.log("2. Build on the integration box.");
+		console.log("   a. Walk over to integration box.");
+		console.log("   b. 'git pull'");
+		console.log("   c. 'jake strict=true'");
+		console.log("   d. If jake fails, stop! Try again after fixing the issue.");
+		console.log("3. 'git checkout integration'");
+		console.log("4. 'git merge master --no-ff --log'");
+		console.log("5. 'git checkout master'");
+	});
+
+//	desc("Ensure correct version of Node is present. Use 'strict=true' to require exact match");
+	task("nodeVersion", [], function() {
+		function failWithQualifier(qualifier) {
+			fail("Incorrect node version. Expected " + qualifier +
+					" [" + expectedString + "], but was [" + actualString + "].");
+		}
+
+		var expectedString = NODE_VERSION;
+		var actualString = process.version;
+		var expected = parseNodeVersion("expected Node version", expectedString);
+		var actual = parseNodeVersion("Node version", actualString);
+
+		if (process.env.strict) {
+			if (actual[0] !== expected[0] || actual[1] !== expected[1] || actual[2] !== expected[2]) {
+				failWithQualifier("exactly");
+			}
+		}
+		else {
+			if (actual[0] < expected[0]) {failWithQualifier("at least");}
+			if (actual[0] === expected[0] && actual[1] < expected[1]) {failWithQualifier("at least");}
+			if (actual[0] === expected[0] && actual[1] === expected[1] && actual[2] < expected[2]) {failWithQualifier("at least");}
+		}
+
+	});
+
+	function parseNodeVersion(description, versionString) {
+		var versionMatcher = /^v(\d+)\.(\d+)\.(\d+)$/;    // v[major].[minor].[bugfix]
+		var versionInfo = versionString.match(versionMatcher);
+		if (versionInfo === null) {fail("Could not parse " + description + " (was '" + versionString + "')");}
+
+		var major = parseInt(versionInfo[1], 10);
+		var minor = parseInt(versionInfo[2], 10);
+		var bugfix = parseInt(versionInfo[3], 10);
+		return [major, minor, bugfix];
+	}
+
+
+	function nodeLintOptions() {
+		return {
+			bitwise:true,
+			curly:false,
+			eqeqeq:true,
+			forin:true,
+			immed:true,
+			latedef:false,
+			newcap:true,
+			noarg:true,
+			noempty:true,
+			nonew:true,
+			regexp:true,
+			undef:true,
+			strict:true,
+			trailing:true,
+			node:true
+		};
+	}
+}());
