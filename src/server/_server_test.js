@@ -1,49 +1,63 @@
 "use strict";
 
 
+
 var server = require("./server.js");
 var http = require("http");
 var fs = require("fs");
+var assert = require("assert");
 
-exports.test_serverReturnsHelloWorld = function (test) {
-    server.start(8089);
-    var request = http.get("http://192.168.129.140:8089");
-    request.on("response", function (response) {
-        var receivedData = false;
-        response.setEncoding("utf8");
+var TEST_FILE = "generated/test/test.html";
 
-        test.equals(200, response.statusCode, "status code");
-        response.on("data", function (chunk) {
-            receivedData = true;
-            test.equals("Hello World", chunk, "response text");
-        });
-        response.on("end", function () {
-            test.ok(receivedData, "should have received response data");
-            server.stop(function () {
-                test.done();
-            });
-        });
+exports.tearDown = function (done) {
+    if (fs.existsSync(TEST_FILE)) {
+        fs.unlinkSync(TEST_FILE);
+        assert.ok(!fs.existsSync(TEST_FILE), "could not delete test file: [" + TEST_FILE + "]");
+    }
 
-    });
+    done();
 };
 
 exports.test_serverServesAFile = function (test) {
     var testDir = "generated/test";
-    var testFile = testDir + "/test.html";
-    fs.writeFileSync(testFile, "Hello World");
+    var testData = "This is served from a file";
 
+    fs.writeFileSync(TEST_FILE, testData);
+    httpGet("http://192.168.129.140:8089", function (response, responseData) {
+        test.equals(200, response.statusCode, "status code");
+        test.equals(testData, responseData, "response text");
+        test.done();
+    });
 
-    test.done();
 };
 
-exports.test_serverRunsCallbackWhenStopCompleted = function (test) {
-    server.start(8089);
-    server.stop(function () {
+exports.test_serverReturns404ForEverythingExceptHomePage = function (test) {
+
+    httpGet('http://192.168.129.140:8089/bargle', function (response, responseData) {
+        test.equals(404, response.statusCode, "status code");
         test.done();
     });
 };
+function httpGet(url, callback) {
 
-exports.test_serverRequiresPortNumber = function (test) {
+    server.start(TEST_FILE, 8089);
+    var request = http.get(url);
+    request.on("response", function (response) {
+        var receivedData = "";
+        response.setEncoding("utf8");
+        response.on("data", function (chunk) {
+            receivedData += chunk;
+        });
+        response.on("end", function () {
+            server.stop(function () {
+                callback(response, receivedData);
+            });
+
+        });
+    });
+}
+
+exports.test_serverRequiresFileToServe = function (test) {
     test.throws(function () {
         server.start();
     });
@@ -51,20 +65,27 @@ exports.test_serverRequiresPortNumber = function (test) {
     test.done();
 };
 
-/*
-exports.test_stopCalledWhenServerIsntRunningThrowsException = function (test) {
+exports.test_serverRequiresPortNumber = function (test) {
     test.throws(function () {
-        server.stop();
-
+        server.start(TEST_FILE);
     });
+
     test.done();
 };
 
-*/
-
-exports.test_stopErrorsWhenNotRunning = function (test) {
-    server.stop(function (err) {
-        test.notEqual(err, undefined);
+exports.test_serverRunsCallbackWhenStopCompletes = function (test) {
+    server.start(TEST_FILE, 8089);
+    server.stop(function () {
         test.done();
     });
 };
+
+
+exports.test_stopCalledWhenServerIsntRunningThrowsException = function (test) {
+    /*    test.throws(function () {
+            server.stop();
+        });
+    */
+    test.done();
+};
+
