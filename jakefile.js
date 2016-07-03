@@ -1,16 +1,16 @@
 
 "use strict";
 /*global desc, task, jake, fail, complete, directory */
-(function() {
+(function () {
 
 	var NODE_VERSION = "v4.4.5";
 	var GENERATED_DIR = "generated";
 	var TEMP_TESTFILE_DIR = GENERATED_DIR + "/test";
 
-	directory (TEMP_TESTFILE_DIR);
+	directory(TEMP_TESTFILE_DIR);
 
 	desc("Delete all generated files");
-	task("clean", [], function() {
+	task("clean", [], function () {
 		jake.rmRf(GENERATED_DIR);
 	});
 
@@ -18,28 +18,32 @@
 	task("default", ["lint", "test"]);
 
 	desc("Lint everything");
-	task("lint", ["nodeVersion"], function() {
+	task("lint", ["nodeVersion"], function () {
 		var lint = require("./build/lint/lint_runner.js");
 
-		var files = new jake.FileList();
-		files.include("**/*.js");
-		files.exclude("node_modules");
+		var javascriptFiles = new jake.FileList();
+		javascriptFiles.include("**/*.js");
+		javascriptFiles.exclude("node_modules");
 		var options = nodeLintOptions();
-		var passed = lint.validateFileList(files.toArray(), options, {});
+		var passed = lint.validateFileList(javascriptFiles.toArray(), options, {});
 		if (!passed) { fail("Lint failed"); }
 	});
 
 	desc("Test everything");
-	task("test", ["nodeVersion", TEMP_TESTFILE_DIR], function() {
+	task("test", ["nodeVersion", TEMP_TESTFILE_DIR], function () {
+		var testFiles = new jake.FileList();
+		testFiles.include("**/_*_test.js");
+		testFiles.exclude("node_modules");
+
 		var reporter = require("nodeunit").reporters["default"];
-		reporter.run(['src/server/_server_test.js'], null, function(failures) {
-			if (failures) {fail("Tests failed");}
+		reporter.run(testFiles.toArray(), null, function (failures) {
+			if (failures) { fail("Tests failed"); }
 			complete();
 		});
-	}, {async: true});
+	}, { async: true });
 
 	desc("Integrate");
-	task("integrate", ["default"], function() {
+	task("integrate", ["default"], function () {
 		console.log("1. Make sure 'git status' is clean.");
 		console.log("2. Build on the integration box.");
 		console.log("   a. Walk over to integration box.");
@@ -51,11 +55,11 @@
 		console.log("5. 'git checkout master'");
 	});
 
-//	desc("Ensure correct version of Node is present. Use 'strict=true' to require exact match");
-	task("nodeVersion", [], function() {
+	//	desc("Ensure correct version of Node is present. Use 'strict=true' to require exact match");
+	task("nodeVersion", [], function () {
 		function failWithQualifier(qualifier) {
 			fail("Incorrect node version. Expected " + qualifier +
-					" [" + expectedString + "], but was [" + actualString + "].");
+				" [" + expectedString + "], but was [" + actualString + "].");
 		}
 
 		var expectedString = NODE_VERSION;
@@ -69,9 +73,9 @@
 			}
 		}
 		else {
-			if (actual[0] < expected[0]) {failWithQualifier("at least");}
-			if (actual[0] === expected[0] && actual[1] < expected[1]) {failWithQualifier("at least");}
-			if (actual[0] === expected[0] && actual[1] === expected[1] && actual[2] < expected[2]) {failWithQualifier("at least");}
+			if (actual[0] < expected[0]) { failWithQualifier("at least"); }
+			if (actual[0] === expected[0] && actual[1] < expected[1]) { failWithQualifier("at least"); }
+			if (actual[0] === expected[0] && actual[1] === expected[1] && actual[2] < expected[2]) { failWithQualifier("at least"); }
 		}
 
 	});
@@ -79,7 +83,7 @@
 	function parseNodeVersion(description, versionString) {
 		var versionMatcher = /^v(\d+)\.(\d+)\.(\d+)$/;    // v[major].[minor].[bugfix]
 		var versionInfo = versionString.match(versionMatcher);
-		if (versionInfo === null) {fail("Could not parse " + description + " (was '" + versionString + "')");}
+		if (versionInfo === null) { fail("Could not parse " + description + " (was '" + versionString + "')"); }
 
 		var major = parseInt(versionInfo[1], 10);
 		var minor = parseInt(versionInfo[2], 10);
@@ -90,21 +94,21 @@
 
 	function nodeLintOptions() {
 		return {
-			bitwise:true,
-			curly:false,
-			eqeqeq:true,
-			forin:true,
-			immed:true,
-			latedef:false,
-			newcap:true,
-			noarg:true,
-			noempty:true,
-			nonew:true,
-			regexp:true,
-			undef:true,
-			strict:true,
-			trailing:true,
-			node:true
+			bitwise: true,
+			curly: false,
+			eqeqeq: true,
+			forin: true,
+			immed: true,
+			latedef: false,
+			newcap: true,
+			noarg: true,
+			noempty: true,
+			nonew: true,
+			regexp: true,
+			undef: true,
+			strict: true,
+			trailing: true,
+			node: true
 		};
 	}
-}());
+} ());

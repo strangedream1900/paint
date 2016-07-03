@@ -4,7 +4,7 @@ var http = require("http");
 var server;
 var fs = require("fs");
 
-exports.start = function (homePageFileToServe, notFoundPageToServe, portNumber) {
+exports.start = function (homePageFileToServe, notFoundPageToServe, portNumber, callback) {
     if (!portNumber) { throw "port number is required"; }
 
     server = http.createServer();
@@ -18,7 +18,7 @@ exports.start = function (homePageFileToServe, notFoundPageToServe, portNumber) 
         }
     });
 
-    server.listen(portNumber);
+    server.listen(portNumber, callback);
 };
 
 exports.stop = function (callback) {
