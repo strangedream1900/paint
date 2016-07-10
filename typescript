@@ -1,0 +1,1740 @@
+Script started on Sun 10 Jul 2016 07:02:32 PM UTC
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ foreman start } [K[K| cat
+foreman: command not found
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ foreman start | cat[C[1P[1P[1P[1P[1P[1P[1P[1@n[1@f
+[WARN] No ENV file found
+7:03:06 PM web.1 |  events.js:141
+7:03:06 PM web.1 |        throw er; // Unhandled 'error' event
+7:03:06 PM web.1 |        ^
+7:03:06 PM web.1 |  Error: listen EADDRINUSE :::5000
+7:03:06 PM web.1 |      at Object.exports._errnoException (util.js:870:11)
+7:03:06 PM web.1 |      at exports._exceptionWithHostPort (util.js:893:20)
+7:03:06 PM web.1 |      at Server._listen2 (net.js:1234:14)
+7:03:06 PM web.1 |      at listen (net.js:1270:10)
+7:03:06 PM web.1 |      at Server.listen (net.js:1366:5)
+7:03:06 PM web.1 |      at Object.exports.start (/vagrant/wikipaint/src/server/server.js:21:12)
+7:03:06 PM web.1 |      at /vagrant/wikipaint/src/server/wikipaint.js:8:12
+7:03:06 PM web.1 |      at Object.<anonymous> (/vagrant/wikipaint/src/server/wikipaint.js:12:2)
+7:03:06 PM web.1 |      at Module._compile (module.js:409:26)
+7:03:06 PM web.1 |      at Object.Module._extensions..js (module.js:416:10)
+[DONE] Killing all processes with signal  null
+7:03:06 PM web.1 Exited Abnormally
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ nf start | cat[5@foreman[C[C[C[C[C[C[C[C[C[C[C[C[5Pnf[C[C[C[C[C[C[C[C[C[C[C[C[Kps
+  PID TTY          TIME CMD
+ 2684 pts/3    00:00:00 bash
+ 2711 pts/3    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ psnf start | cat
+[WARN] No ENV file found
+7:03:13 PM web.1 |  events.js:141
+7:03:13 PM web.1 |        throw er; // Unhandled 'error' event
+7:03:13 PM web.1 |        ^
+7:03:13 PM web.1 |  Error: listen EADDRINUSE :::5000
+7:03:13 PM web.1 |      at Object.exports._errnoException (util.js:870:11)
+7:03:13 PM web.1 |      at exports._exceptionWithHostPort (util.js:893:20)
+7:03:13 PM web.1 |      at Server._listen2 (net.js:1234:14)
+7:03:13 PM web.1 |      at listen (net.js:1270:10)
+7:03:13 PM web.1 |      at Server.listen (net.js:1366:5)
+7:03:13 PM web.1 |      at Object.exports.start (/vagrant/wikipaint/src/server/server.js:21:12)
+7:03:13 PM web.1 |      at /vagrant/wikipaint/src/server/wikipaint.js:8:12
+7:03:13 PM web.1 |      at Object.<anonymous> (/vagrant/wikipaint/src/server/wikipaint.js:12:2)
+7:03:13 PM web.1 |      at Module._compile (module.js:409:26)
+7:03:13 PM web.1 |      at Object.Module._extensions..js (module.js:416:10)
+[DONE] Killing all processes with signal  null
+7:03:13 PM web.1 Exited Abnormally
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ nf start
+[33m[WARN] No ENV file found[0m
+[32m[OKAY] Trimming display Output to 44 Columns[0m
+[36m7:03:18 PM web.1 | [0m events.js:141
+[36m7:03:18 PM web.1 | [0m       throw er; // Unhandled 'error' event
+[36m7:03:18 PM web.1 | [0m       ^
+[36m7:03:18 PM web.1 | [0m Error: listen EADDRINUSE :::5000
+[36m7:03:18 PM web.1 | [0m     at Object.exports._errnoException (util.…
+[36m7:03:18 PM web.1 | [0m     at exports._exceptionWithHostPort (util.…
+[36m7:03:18 PM web.1 | [0m     at Server._listen2 (net.js:1234:14)
+[36m7:03:18 PM web.1 | [0m     at listen (net.js:1270:10)
+[36m7:03:18 PM web.1 | [0m     at Server.listen (net.js:1366:5)
+[36m7:03:18 PM web.1 | [0m     at Object.exports.start (/vagrant/wikipa…
+[36m7:03:18 PM web.1 | [0m     at /vagrant/wikipaint/src/server/wikipai…
+[36m7:03:18 PM web.1 | [0m     at Object.<anonymous> (/vagrant/wikipain…
+[36m7:03:18 PM web.1 | [0m     at Module._compile (module.js:409:26)
+[36m7:03:18 PM web.1 | [0m     at Object.Module._extensions..js (module…
+[36m[DONE] Killing all processes with signal  null[0m
+[36m7:03:18 PM web.1[0m [36mExited Abnormally[0m
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2684 pts/3    00:00:00 bash
+ 2735 pts/3    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2684 pts/3    00:00:00 bash
+ 2737 pts/3    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ psnf start | catps[Knf start | cat
+[WARN] No ENV file found
+7:03:44 PM web.1 |  Server started
+^C[WARN] Interrupted by User
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: write EPIPE
+    at exports._errnoException (util.js:870:11)
+    at WriteWrap.afterWrite (net.js:769:14)
+
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ script /dev/null nf-[K start {[K|  cat
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ,.[K[K./jae[Kke.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+server stdout: ]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+^C]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 2790 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+server stdout: ]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ 
+
+
+^C]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+server stdout: ]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.shps[K./jake.shps[K./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+^C]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+stdout: ]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ 
+^C]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ^C
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.shps[K./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js failed
+39: var commandLine = parseProcFile();
+   'parseProcFile' is not defined.
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+jake aborted.
+Error: Lint failed
+    at api.fail (/vagrant/wikipaint/node_modules/jake/lib/api.js:336:18)
+    at null.action (/vagrant/wikipaint/Jakefile.js:29:18)
+(See full trace by running task with --trace)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+jake aborted.
+Error: connect ECONNREFUSED 192.168.129.140:5000
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+(See full trace by running task with --trace)
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 2909 pts/4    00:00:00 node
+ 2918 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ kill 2909
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ kill 2909ps[K./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+jake aborted.
+Error: connect ECONNREFUSED 192.168.129.140:5000
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+(See full trace by running task with --trace)
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 2929 pts/4    00:00:00 node
+ 3053 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ kill 2929
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ kill 2929ps[K./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+✔ test_canGetHomePage
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m[32mOK: [39m[22m10 assertions (281ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+jake aborted.
+Error: connect ECONNREFUSED 192.168.129.140:8089
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+(See full trace by running task with --trace)
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 3092 pts/4    00:00:00 node
+ 3098 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ kill 3092
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ kill 3092ps[K./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+✔ test_canGetHomePage
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m[32mOK: [39m[22m10 assertions (274ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[31m✖ test_canGetHomePage[39m
+
+TypeError: Cannot read property 'on' of undefined
+    at Object.exports.tearDown (/vagrant/wikipaint/src/_smoke_test.js:12:10)
+    at /vagrant/wikipaint/node_modules/nodeunit/lib/core.js:260:35
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:458:21
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:163:13
+    at iterate (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:123:13)
+    at async.forEachSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:139:9)
+    at _asyncMap (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:162:9)
+    at Object.mapSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:152:23)
+    at Object.async.series (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:456:19)
+    at Object.<anonymous> (/vagrant/wikipaint/node_modules/nodeunit/lib/core.js:264:22)
+
+[31m✖ test_canGet404Page[39m
+
+TypeError: Cannot read property 'on' of undefined
+    at Object.exports.tearDown (/vagrant/wikipaint/src/_smoke_test.js:12:10)
+    at /vagrant/wikipaint/node_modules/nodeunit/lib/core.js:260:35
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:458:21
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:163:13
+    at iterate (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:123:13)
+    at async.forEachSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:139:9)
+    at _asyncMap (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:162:9)
+    at Object.mapSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:152:23)
+    at Object.async.series (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:456:19)
+    at Object.<anonymous> (/vagrant/wikipaint/node_modules/nodeunit/lib/core.js:264:22)
+
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[31mFAILURES: [39m[22m2/10 assertions failed (84ms)
+jake aborted.
+Error: Tests failed
+    at api.fail (/vagrant/wikipaint/node_modules/jake/lib/api.js:336:18)
+    at /vagrant/wikipaint/Jakefile.js:40:20
+(See full trace by running task with --trace)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 3138 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps./jake.shkill 3092./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+^C]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 3154 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 3185 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+✔ test_canGetHomePage
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (280ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+<Buffer 77 65 62 3a 20 6e 6f 64 65 20 73 72 63 2f 73 65 72 76 65 72 2f 77 69 6b 69 70 61 69 6e 74 2e 6a 73 20 24 50 4f 52 54>
+stdout: Server started
+
+✔ test_canGetHomePage
+<Buffer 77 65 62 3a 20 6e 6f 64 65 20 73 72 63 2f 73 65 72 76 65 72 2f 77 69 6b 69 70 61 69 6e 74 2e 6a 73 20 24 50 4f 52 54>
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (309ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+<Buffer 77 65 62 3a 20 6e 6f 64 65 20 73 72 63 2f 73 65 72 76 65 72 2f 77 69 6b 69 70 61 69 6e 74 2e 6a 73 20 24 50 4f 52 54> 'utf8'
+stdout: Server started
+
+✔ test_canGetHomePage
+<Buffer 77 65 62 3a 20 6e 6f 64 65 20 73 72 63 2f 73 65 72 76 65 72 2f 77 69 6b 69 70 61 69 6e 74 2e 6a 73 20 24 50 4f 52 54> 'utf8'
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (291ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m[32mOK: [39m[22m10 assertions (290ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh[K[K[K[K[K[K[K[K[Kps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 3332 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps[Kps./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+Matches: null
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+Matches: null
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (279ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+Matches: null
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+Matches: null
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (286ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+Matches: null
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+Matches: null
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m[32mOK: [39m[22m10 assertions (290ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+Matches: web: node src/server/wikipaint.js $PORT,node src/server/wikipaint.js $PORT
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+Matches: web: node src/server/wikipaint.js $PORT,node src/server/wikipaint.js $PORT
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (279ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+Matches: web: node src/server/wikipaint.js $PORT,node src/server/wikipaint.js $PORT
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+Matches: web: node src/server/wikipaint.js $PORT,node src/server/wikipaint.js $PORT
+web: node src/server/wikipaint.js $PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (283ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js failed
+55: if (matches === null) { new Error("Cound not parse Procfile"); }
+   Do not use 'new' for side effects.
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+jake aborted.
+Error: Lint failed
+    at api.fail (/vagrant/wikipaint/node_modules/jake/lib/api.js:336:18)
+    at null.action (/vagrant/wikipaint/Jakefile.js:29:18)
+(See full trace by running task with --trace)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[Function: split]
+stdout: Server started
+
+✔ test_canGetHomePage
+[Function: split]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (283ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGetHomePage
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (285ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+✔ test_canGetHomePage
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m[32mOK: [39m[22m10 assertions (303ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGetHomePage
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (285ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGetHomePage
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (275ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGetHomePage
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (282ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGetHomePage
+[ 'node', 'src/server/wikipaint.js', '$PORT' ]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (278ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,$PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,$PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (278ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,$PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,$PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (283ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,$PORT
+stdout: Server started
+
+✔ test_canGetHomePage
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,$PORT
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (278ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,5000
+stdout: Server started
+
+✔ test_canGetHomePage
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,5000
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (281ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,5000
+[ 'node', 'src/server/wikipaint.js', '5000' ]
+stdout: Server started
+
+✔ test_canGetHomePage
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,5000
+[ 'node', 'src/server/wikipaint.js', '5000' ]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m[32mOK: [39m[22m10 assertions (289ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,5000
+[ 'node', 'src/server/wikipaint.js', '5000' ]
+stdout: Server started
+
+✔ test_canGetHomePage
+before:,node,src/server/wikipaint.js,$PORT
+after:node,src/server/wikipaint.js,5000
+[ 'node', 'src/server/wikipaint.js', '5000' ]
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (292ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ cat procf[K[K[K[K[K[KPr[K[K Procfile 
+web: node src/server/wikipaint.js $PORT]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ cat jake[K[K[Kake[K[K[K[Kpackage.json 
+{
+  "name": "wikipaint",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strangedream1900/paint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strangedream1900/paint/issues"
+  },
+  "homepage": "https://github.com/strangedream1900/paint#readme",
+  "dependencies": {
+    "jake": "^8.0.12",
+    "jshint": "^2.9.2",
+    "nodeunit": "^0.9.1"
+  }
+}
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ cat package.json [4PProcfile[C[4@package.json[C[Kcat package.json 
+{
+  "name": "wikipaint",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strangedream1900/paint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strangedream1900/paint/issues"
+  },
+  "homepage": "https://github.com/strangedream1900/paint#readme",
+  "dependencies": {
+    "jake": "^8.0.12",
+    "jshint": "^2.9.2",
+    "nodeunit": "^0.9.1"
+  }
+}
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ cat package.json [4PProcfile[C[4P./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+✔ test_canGetHomePage
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (290ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ npm install -s[K-save p[K[K-[K procfile
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnot a package[0m /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35maddLocal[0m Could not install /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 3.13.0-87-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "procfile"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v4.4.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.15.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mpath[0m /tmp/npm-4016-2d0047cb/unpack-58b45f7d741a/package.json
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ENOENT
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35merrno[0m -2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35msyscall[0m open
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m ENOENT: no such file or directory, open '/tmp/npm-4016-2d0047cb/unpack-58b45f7d741a/package.json'
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m This is most likely not a problem with npm itself
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m and is related to npm not being able to find a file.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m 
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /vagrant/wikipaint/npm-debug.log
+[0m]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ npm install --save procfilenprocfile [A]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-procfilee[A]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprocfile [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Coprocfilee[A]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdprocfile[A]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceprocfile[A]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-procfile[A]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+-[0G\[0G|[0G/[0G-[0G\[0G|[0G/[0G-[0G\[0G|[0G/[0G-[0G\[0G|[0G/[0G-[0G\[0G[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 3.13.0-87-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "node-procfile"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v4.4.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.15.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m E404
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m Registry returned 404 for GET on https://registry.npmjs.org/node-procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m 'node-procfile' is not in the npm registry.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m You should bug the author to publish it (or use the name yourself!)
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m It was specified as a dependency of 'wikipaint'
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m Note that you can also install from a
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35m404[0m tarball, folder, http url, or git url.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /vagrant/wikipaint/npm-debug.log
+[0m]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ npm install --save node-procffile[A]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pprocfile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P./jake.shnpm install --save procfile[1Pprocfile[1Pprocfile[1Pprocfile[1Pprocfile[1Pprocfile[1Pprocfile[1Pprocfile
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnot a package[0m /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35maddLocal[0m Could not install /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 3.13.0-87-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/nodejs" "/usr/bin/npm" "install" "procfile"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v4.4.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.15.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mpath[0m /tmp/npm-4035-8f9e5526/unpack-a57aac86aeae/package.json
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ENOENT
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35merrno[0m -2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35msyscall[0m open
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m ENOENT: no such file or directory, open '/tmp/npm-4035-8f9e5526/unpack-a57aac86aeae/package.json'
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m This is most likely not a problem with npm itself
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m and is related to npm not being able to find a file.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m 
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /vagrant/wikipaint/npm-debug.log
+[0m]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ npm install procfile[Kclear
+[H[2J]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ clearnpm install procfile-procfile-procfilesprocfileaprocfilevprocfileeprocfile procfile
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnot a package[0m /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35maddLocal[0m Could not install /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 3.13.0-87-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "procfile"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v4.4.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.15.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mpath[0m /tmp/npm-4045-63dea2cf/unpack-038a68230083/package.json
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ENOENT
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35merrno[0m -2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35msyscall[0m open
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m ENOENT: no such file or directory, open '/tmp/npm-4045-63dea2cf/unpack-038a68230083/package.json'
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m This is most likely not a problem with npm itself
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m and is related to npm not being able to find a file.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m 
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /vagrant/wikipaint/npm-debug.log
+[0m]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ npm install --save procfile
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnot a package[0m /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35maddLocal[0m Could not install /vagrant/wikipaint/procfile
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 3.13.0-87-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "procfile"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v4.4.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.15.5
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mpath[0m /tmp/npm-4064-cfd3e5a2/unpack-8c9f67c924cb/package.json
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ENOENT
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35merrno[0m -2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35msyscall[0m open
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m ENOENT: no such file or directory, open '/tmp/npm-4064-cfd3e5a2/unpack-8c9f67c924cb/package.json'
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m This is most likely not a problem with npm itself
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m and is related to npm not being able to find a file.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35menoent[0m 
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /vagrant/wikipaint/npm-debug.log
+[0m]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ls
+[0m[34;42mbuild[0m         [01;32mjake.sh[0m        [01;32mProcfile[0m   [34;42mtest[0m
+[34;42mgenerated[0m     [34;42mnode_modules[0m   [01;32mREADME.md[0m  [01;32mtypescript[0m
+[01;32minstructions[0m  [01;32mnpm-debug.log[0m  [34;42mspikes[0m
+[01;32mjakefile.js[0m   [01;32mpackage.json[0m   [34;42msrc[0m
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ mv p[KProcfile build/
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ls
+[0m[34;42mbuild[0m         [01;32mjakefile.js[0m   [01;32mnpm-debug.log[0m  [34;42mspikes[0m  [01;32mtypescript[0m
+[34;42mgenerated[0m     [01;32mjake.sh[0m       [01;32mpackage.json[0m   [34;42msrc[0m
+[01;32minstructions[0m  [34;42mnode_modules[0m  [01;32mREADME.md[0m      [34;42mtest[0m
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ lsmv Procfile build/ls[Kmv Procfile build/ls[Knpm install --save procfileclear[Knpm install --save procfile
+-[0G\[0G|[0G/[0G-[0G\[0G|[0G/[0G-[0G\[0Gprocfile@0.1.1 node_modules/procfile
+[2K]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ cd build/
+]0;lex@ubuntu-140: /vagrant/wikipaint/buildlex@ubuntu-140:/vagrant/wikipaint/build$ mv p[KProcfile ../
+]0;lex@ubuntu-140: /vagrant/wikipaint/buildlex@ubuntu-140:/vagrant/wikipaint/build$ cd ..
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ls
+[0m[34;42mbuild[0m         [01;32mjakefile.js[0m   [01;32mpackage.json[0m  [34;42mspikes[0m  [01;32mtypescript[0m
+[34;42mgenerated[0m     [01;32mjake.sh[0m       [01;32mProcfile[0m      [34;42msrc[0m
+[01;32minstructions[0m  [34;42mnode_modules[0m  [01;32mREADME.md[0m     [34;42mtest[0m
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+[31m✖ test_canGetHomePage[39m
+
+TypeError: Cannot read property 'on' of undefined
+    at Object.exports.tearDown (/vagrant/wikipaint/src/_smoke_test.js:14:10)
+    at /vagrant/wikipaint/node_modules/nodeunit/lib/core.js:260:35
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:458:21
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:163:13
+    at iterate (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:123:13)
+    at async.forEachSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:139:9)
+    at _asyncMap (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:162:9)
+    at Object.mapSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:152:23)
+    at Object.async.series (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:456:19)
+    at Object.<anonymous> (/vagrant/wikipaint/node_modules/nodeunit/lib/core.js:264:22)
+
+[31m✖ test_canGet404Page[39m
+
+TypeError: Cannot read property 'on' of undefined
+    at Object.exports.tearDown (/vagrant/wikipaint/src/_smoke_test.js:14:10)
+    at /vagrant/wikipaint/node_modules/nodeunit/lib/core.js:260:35
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:458:21
+    at /vagrant/wikipaint/node_modules/nodeunit/deps/async.js:163:13
+    at iterate (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:123:13)
+    at async.forEachSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:139:9)
+    at _asyncMap (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:162:9)
+    at Object.mapSeries (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:152:23)
+    at Object.async.series (/vagrant/wikipaint/node_modules/nodeunit/deps/async.js:456:19)
+    at Object.<anonymous> (/vagrant/wikipaint/node_modules/nodeunit/lib/core.js:264:22)
+
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[31mFAILURES: [39m[22m2/10 assertions failed (95ms)
+jake aborted.
+Error: Tests failed
+    at api.fail (/vagrant/wikipaint/node_modules/jake/lib/api.js:336:18)
+    at /vagrant/wikipaint/Jakefile.js:40:20
+(See full trace by running task with --trace)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh[Kps
+  PID TTY          TIME CMD
+ 2754 pts/4    00:00:00 bash
+ 4115 pts/4    00:00:00 ps
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ps./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+
+[31m[1mFAILURES: Undone tests (or their setups/teardowns): [22m[39m
+- test_canGetHomePage
+
+To fix this, make sure all tests call test.done()
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+stdout: Server started
+
+✔ test_canGetHomePage
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (285ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+stdout: Server started
+
+✔ test_canGetHomePage
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (311ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ 
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+stdout: Server started
+
+✔ test_canGetHomePage
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (310ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+stdout: Server started
+
+✔ test_canGetHomePage
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+stdout: Server started
+
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (306ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m_smoke_test.js[22m
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+✔ test_canGetHomePage
+{ command: 'node',
+  options: [ 'src/server/wikipaint.js', '5000' ] }
+✔ test_canGet404Page
+
+[1m[32mOK: [39m[22m10 assertions (308ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ./jake.sh
+build/lint/lint_runner.js ok
+jakefile.js ok
+spikes/node_http_get/http_server.js ok
+spikes/node_http_servefile/http_server.js ok
+spikes/node_http_server/http_server.js ok
+src/_smoke_test.js ok
+src/server/_server_test.js ok
+src/server/server.js ok
+src/server/wikipaint.js ok
+
+[1m_smoke_test.js[22m
+✔ test_canGetHomePage
+✔ test_canGet404Page
+
+[1m_server_test.js[22m
+✔ test_servesHomePageFromFile
+✔ test_returnsHomePageWhenAskedForIndex
+✔ test_returns404FromFileForEverythingExceptHomePage
+✔ test_requires404PageParameter
+✔ test_requiresHomePageParameter
+✔ test_requiresPortParameter
+✔ test_runsCallbackWhenStopCompletes
+✔ test_stopThrowsExceptionWhenNotRunning
+
+[1m[32mOK: [39m[22m10 assertions (295ms)
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ node -v
+v4.4.5
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ npm -v
+2.15.5
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ npm list
+wikipaint@1.0.0 /vagrant/wikipaint
+├─┬ jake@8.0.12
+│ ├── async@0.9.2
+│ ├─┬ chalk@0.4.0
+│ │ ├── ansi-styles@1.0.0
+│ │ ├── has-color@0.1.7
+│ │ └── strip-ansi@0.1.1
+│ ├─┬ filelist@0.0.4
+│ │ ├─┬ minimatch@0.3.0
+│ │ │ ├── lru-cache@2.7.3
+│ │ │ └── sigmund@1.0.1
+│ │ └── utilities@0.0.37
+│ ├─┬ minimatch@0.2.14
+│ │ ├── lru-cache@2.7.3
+│ │ └── sigmund@1.0.1
+│ └── utilities@1.0.4
+├─┬ jshint@2.9.2
+│ ├─┬ cli@0.6.6
+│ │ └─┬ glob@3.2.11
+│ │   ├── inherits@2.0.1
+│ │   └─┬ minimatch@0.3.0
+│ │     ├── lru-cache@2.7.3
+│ │     └── sigmund@1.0.1
+│ ├─┬ console-browserify@1.1.0
+│ │ └── date-now@0.1.4
+│ ├── exit@0.1.2
+│ ├─┬ htmlparser2@3.8.3
+│ │ ├── domelementtype@1.3.0
+│ │ ├── domhandler@2.3.0
+│ │ ├─┬ domutils@1.5.1
+│ │ │ └─┬ dom-serializer@0.1.0
+│ │ │   ├── domelementtype@1.1.3
+│ │ │   └── entities@1.1.1
+│ │ ├── entities@1.0.0
+│ │ └─┬ readable-stream@1.1.14
+│ │   ├── core-util-is@1.0.2
+│ │   ├── inherits@2.0.1
+│ │   ├── isarray@0.0.1
+│ │   └── str
