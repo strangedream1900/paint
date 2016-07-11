@@ -1737,4 +1737,112 @@ wikipaint@1.0.0 /vagrant/wikipaint
 │ │   ├── core-util-is@1.0.2
 │ │   ├── inherits@2.0.1
 │ │   ├── isarray@0.0.1
-│ │   └── str
+│ │   └── string_decoder@0.10.31
+│ ├── lodash@3.7.0
+│ ├─┬ minimatch@2.0.10
+│ │ └─┬ brace-expansion@1.1.5
+│ │   ├── balanced-match@0.4.1
+│ │   └── concat-map@0.0.1
+│ ├── shelljs@0.3.0
+│ └── strip-json-comments@1.0.4
+├─┬ nodeunit@0.9.1
+│ └─┬ tap@0.7.1
+│   ├── buffer-equal@0.0.2
+│   ├── deep-equal@1.0.1
+│   ├─┬ difflet@0.2.6
+│   │ ├── charm@0.1.2
+│   │ ├── deep-is@0.1.3
+│   │ └── traverse@0.6.6
+│   ├─┬ glob@4.5.3
+│   │ ├─┬ inflight@1.0.5
+│   │ │ └── wrappy@1.0.2
+│   │ ├─┬ minimatch@2.0.10
+│   │ │ └─┬ brace-expansion@1.1.5
+│   │ │   ├── balanced-match@0.4.1
+│   │ │   └── concat-map@0.0.1
+│   │ └─┬ once@1.3.3
+│   │   └── wrappy@1.0.2
+│   ├── inherits@2.0.1
+│   ├─┬ mkdirp@0.5.1
+│   │ └── minimist@0.0.8
+│   ├─┬ nopt@3.0.6
+│   │ └── abbrev@1.0.9
+│   ├─┬ runforcover@0.0.2
+│   │ └─┬ bunker@0.1.2
+│   │   └─┬ burrito@0.2.12
+│   │     ├── traverse@0.5.2
+│   │     └── uglify-js@1.1.1
+│   ├── slide@1.1.6
+│   └── yamlish@0.0.7
+└── procfile@0.1.1
+
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ git add .
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'npm-debug.log' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ s[Kgit status
+lsOn branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   .gitignore[m
+	[32mnew file:   Procfile[m
+	[32mmodified:   package.json[m
+	[32mmodified:   src/_smoke_test.js[m
+	[32mmodified:   src/server/wikipaint.js[m
+	[32mnew file:   typescript[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    npm-debug.log[m
+
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ ls[K[Kls
+[0m[34;42mbuild[0m         [01;32mjakefile.js[0m   [01;32mpackage.json[0m  [34;42mspikes[0m  [01;32mtypescript[0m
+[34;42mgenerated[0m     [01;32mjake.sh[0m       [01;32mProcfile[0m      [34;42msrc[0m
+[01;32minstructions[0m  [34;42mnode_modules[0m  [01;32mREADME.md[0m     [34;42mtest[0m
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ git add .
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'npm-debug.log' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ git commit -am ""u"p"d"a"t"e"d"[C
+[master 82be8a9] updated
+ 7 files changed, 1778 insertions(+), 106 deletions(-)
+ create mode 100644 Procfile
+ delete mode 100644 npm-debug.log
+ create mode 100644 typescript
+]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ heroky[Ku create wikipaint
+[1000D[2K[?25lCreating [35m⬢ wikipaint[39m... [35m⣾[39m 
+[1A[24C[35m⣽[39m[1B[1000D[2K[1A[24C[35m⣻[39m[1B[1000D[2K[1A[24C[35m⢿[39m[1B[1000D[2K[1A[24C[35m⡿[39m[1B[1000D[2K[1A[24C[35m⣟[39m[1B[1000D[2K[1A[24C[35m⣯[39m[1B[1000D[2K[1A[24C[35m⣷[39m[1B[1000D[2K[1A[24C[35m⣾[39m[1B[1000D[2K[1A[24C[35m⣽[39m[1B[1000D[2K[1A[JCreating [35m⬢ wikipaint[39m... [31m[1m![22m[39m
+[?25h [31m▸[39m    Name is already taken
+[?25h]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ heroku create wikipaint[C[K[K[K[K[K[K[K[K[Ktr[Kestwpaint
+[1000D[2K[?25lCreating [35m⬢ testwpaint[39m... [35m⣾[39m 
+[1A[25C[35m⣽[39m[1B[1000D[2K[1A[25C[35m⣻[39m[1B[1000D[2K[1A[25C[35m⢿[39m[1B[1000D[2K[1A[25C[35m⡿[39m[1B[1000D[2K[1A[25C[35m⣟[39m[1B[1000D[2K[1A[25C[35m⣯[39m[1B[1000D[2K[1A[25C[35m⣷[39m[1B[1000D[2K[1A[25C[35m⣾[39m[1B[1000D[2K[1A[25C[35m⣽[39m[1B[1000D[2K[1A[25C[35m⣻[39m[1B[1000D[2K[1A[JCreating [35m⬢ testwpaint[39m... done
+[?25h[36mhttps://testwpaint.herokuapp.com/[39m | [32mhttps://git.heroku.com/testwpaint.git[39m
+[?25h]0;lex@ubuntu-140: /vagrant/wikipaintlex@ubuntu-140:/vagrant/wikipaint$ git push jerok[K[K[K[K[Kheroku master
+Counting objects: 154, done.
+Delta compression using up to 2 threads.
+Compressing objects:   0% (1/128)   Compressing objects:   1% (2/128)   Compressing objects:   2% (3/128)   Compressing objects:   3% (4/128)   Compressing objects:   4% (6/128)   Compressing objects:   5% (7/128)   Compressing objects:   6% (8/128)   Compressing objects:   7% (9/128)   Compressing objects:   8% (11/128)   Compressing objects:   9% (12/128)   Compressing objects:  10% (13/128)   Compressing objects:  11% (15/128)   Compressing objects:  12% (16/128)   Compressing objects:  13% (17/128)   Compressing objects:  14% (18/128)   Compressing objects:  15% (20/128)   Compressing objects:  16% (21/128)   Compressing objects:  17% (22/128)   Compressing objects:  18% (24/128)   Compressing objects:  19% (25/128)   Compressing objects:  20% (26/128)   Compressing objects:  21% (27/128)   Compressing objects:  22% (29/128)   Compressing objects:  23% (30/128)   Compressing objects:  24% (31/128)   Compressing objects:  25% (32/128)   Compressing objects:  26% (34/128)   Compressing objects:  27% (35/128)   Compressing objects:  28% (36/128)   Compressing objects:  29% (38/128)   Compressing objects:  30% (39/128)   Compressing objects:  31% (40/128)   Compressing objects:  32% (41/128)   Compressing objects:  33% (43/128)   Compressing objects:  34% (44/128)   Compressing objects:  35% (45/128)   Compressing objects:  36% (47/128)   Compressing objects:  37% (48/128)   Compressing objects:  38% (49/128)   Compressing objects:  39% (50/128)   Compressing objects:  40% (52/128)   Compressing objects:  41% (53/128)   Compressing objects:  42% (54/128)   Compressing objects:  43% (56/128)   Compressing objects:  44% (57/128)   Compressing objects:  45% (58/128)   Compressing objects:  46% (59/128)   Compressing objects:  47% (61/128)   Compressing objects:  48% (62/128)   Compressing objects:  49% (63/128)   Compressing objects:  50% (64/128)   Compressing objects:  51% (66/128)   Compressing objects:  52% (67/128)   Compressing objects:  53% (68/128)   Compressing objects:  54% (70/128)   Compressing objects:  55% (71/128)   Compressing objects:  56% (72/128)   Compressing objects:  57% (73/128)   Compressing objects:  58% (75/128)   Compressing objects:  59% (76/128)   Compressing objects:  60% (77/128)   Compressing objects:  61% (79/128)   Compressing objects:  62% (80/128)   Compressing objects:  63% (81/128)   Compressing objects:  64% (82/128)   Compressing objects:  65% (84/128)   Compressing objects:  66% (85/128)   Compressing objects:  67% (86/128)   Compressing objects:  68% (88/128)   Compressing objects:  69% (89/128)   Compressing objects:  70% (90/128)   Compressing objects:  71% (91/128)   Compressing objects:  72% (93/128)   Compressing objects:  73% (94/128)   Compressing objects:  74% (95/128)   Compressing objects:  75% (96/128)   Compressing objects:  76% (98/128)   Compressing objects:  77% (99/128)   Compressing objects:  78% (100/128)   Compressing objects:  79% (102/128)   Compressing objects:  80% (103/128)   Compressing objects:  81% (104/128)   Compressing objects:  82% (105/128)   Compressing objects:  83% (107/128)   Compressing objects:  84% (108/128)   Compressing objects:  85% (109/128)   Compressing objects:  86% (111/128)   Compressing objects:  87% (112/128)   Compressing objects:  88% (113/128)   Compressing objects:  89% (114/128)   Compressing objects:  90% (116/128)   Compressing objects:  91% (117/128)   Compressing objects:  92% (118/128)   Compressing objects:  93% (120/128)   Compressing objects:  94% (121/128)   Compressing objects:  95% (122/128)   Compressing objects:  96% (123/128)   Compressing objects:  97% (125/128)   Compressing objects:  98% (126/128)   Compressing objects:  99% (127/128)   Compressing objects: 100% (128/128)   Compressing objects: 100% (128/128), done.
+Writing objects:   0% (1/154)   Writing objects:   1% (2/154)   Writing objects:   2% (4/154)   Writing objects:   3% (5/154)   Writing objects:   4% (7/154)   Writing objects:   5% (8/154)   Writing objects:   6% (10/154)   Writing objects:   7% (11/154)   Writing objects:   8% (13/154)   Writing objects:   9% (14/154)   Writing objects:  10% (16/154)   Writing objects:  11% (17/154)   Writing objects:  12% (19/154)   Writing objects:  13% (21/154)   Writing objects:  14% (22/154)   Writing objects:  15% (24/154)   Writing objects:  16% (25/154)   Writing objects:  17% (27/154)   Writing objects:  18% (28/154)   Writing objects:  19% (30/154)   Writing objects:  20% (31/154)   Writing objects:  21% (33/154)   Writing objects:  22% (34/154)   Writing objects:  23% (36/154)   Writing objects:  24% (37/154)   Writing objects:  25% (39/154)   Writing objects:  26% (41/154)   Writing objects:  27% (42/154)   Writing objects:  28% (44/154)   Writing objects:  29% (45/154)   Writing objects:  30% (47/154)   Writing objects:  31% (48/154)   Writing objects:  32% (50/154)   Writing objects:  33% (51/154)   Writing objects:  34% (53/154)   Writing objects:  35% (54/154)   Writing objects:  36% (56/154)   Writing objects:  37% (57/154)   Writing objects:  38% (59/154)   Writing objects:  39% (61/154)   Writing objects:  40% (62/154)   Writing objects:  41% (64/154)   Writing objects:  42% (65/154)   Writing objects:  43% (67/154)   Writing objects:  44% (68/154)   Writing objects:  45% (70/154)   Writing objects:  46% (71/154)   Writing objects:  47% (73/154)   Writing objects:  48% (74/154)   Writing objects:  49% (76/154)   Writing objects:  50% (77/154)   Writing objects:  51% (79/154)   Writing objects:  52% (81/154)   Writing objects:  53% (82/154)   Writing objects:  54% (84/154)   Writing objects:  55% (85/154)   Writing objects:  56% (87/154)   Writing objects:  57% (88/154)   Writing objects:  58% (90/154)   Writing objects:  59% (91/154)   Writing objects:  60% (93/154)   Writing objects:  61% (94/154)   Writing objects:  62% (96/154)   Writing objects:  63% (98/154)   Writing objects:  64% (99/154)   Writing objects:  65% (101/154)   Writing objects:  66% (102/154)   Writing objects:  67% (104/154)   Writing objects:  68% (105/154)   Writing objects:  69% (107/154)   Writing objects:  70% (108/154)   Writing objects:  71% (110/154)   Writing objects:  72% (111/154)   Writing objects:  73% (113/154)   Writing objects:  74% (114/154)   Writing objects:  75% (116/154)   Writing objects:  76% (118/154)   Writing objects:  77% (119/154)   Writing objects:  78% (121/154)   Writing objects:  79% (122/154)   Writing objects:  80% (124/154)   Writing objects:  81% (125/154)   Writing objects:  82% (127/154)   Writi
